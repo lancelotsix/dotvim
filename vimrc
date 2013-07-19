@@ -10,7 +10,7 @@ set number
 filetype on
 
 " Display special invisible chars
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▷\ ,eol:¬
 
 autocmd FileType ada setlocal ts=3 sts=3 sw=3 expandtab
 autocmd FileType modula2 setlocal ts=2 sts=2 sw=2 noexpandtab
