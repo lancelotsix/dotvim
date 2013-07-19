@@ -5,6 +5,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set number
+set laststatus=2
 
 " Enable file type detection
 filetype on
@@ -16,6 +17,9 @@ autocmd FileType ada setlocal ts=3 sts=3 sw=3 expandtab
 autocmd FileType modula2 setlocal ts=2 sts=2 sw=2 noexpandtab
 
 autocmd BufWritePre *.def,*.mod :call <SID>StripTrailingWhitespaces()
+
+" Status line show current git branch
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Define usefull functions
 function! <SID>StripTrailingWhitespaces()
