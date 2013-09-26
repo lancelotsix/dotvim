@@ -7,6 +7,8 @@ filetype plugin indent on
 set number
 set laststatus=2
 
+set vb
+
 " Enable file type detection
 filetype on
 
