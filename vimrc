@@ -20,6 +20,9 @@ autocmd FileType modula2 setlocal ts=2 sts=2 sw=2 noexpandtab
 
 autocmd BufWritePre *.def,*.mod :call <SID>StripTrailingWhitespaces()
 
+" Delete fugitive buffer as we close them
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
 " Status line show current git branch
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
