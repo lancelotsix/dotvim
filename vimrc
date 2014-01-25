@@ -2,8 +2,10 @@
 execute pathogen#infect()
 
 " Usual configs
-syntax on
-colorscheme desert
+syntax enable
+set background=dark
+colorscheme solarized
+
 filetype plugin indent on
 set number
 set laststatus=2
