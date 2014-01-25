@@ -9,7 +9,7 @@ colorscheme solarized
 " Use <F8> to launch tagbar
 nmap <F8> :TagbarToggle<CR>
 " Use <F7> to launch history br
-nmap <F8> :GundoToggle<CR>
+nmap <F7> :GundoToggle<CR>
 
 
 filetype plugin indent on
