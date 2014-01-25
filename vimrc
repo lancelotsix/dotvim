@@ -2,10 +2,17 @@
 execute pathogen#infect()
 
 " Usual configs
-syntax on
+syntax enable
+set background=dark
+colorscheme solarized
+
 filetype plugin indent on
 set number
 set laststatus=2
+
+if has('gui_running')
+	set guifont=Monospace\ 8
+endif
 
 set vb
 
@@ -17,6 +24,8 @@ set listchars=tab:·\ ,eol:¬
 
 autocmd FileType ada setlocal ts=3 sts=3 sw=3 expandtab
 autocmd FileType modula2 setlocal ts=2 sts=2 sw=2 noexpandtab
+autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType cpp setlocal ts=4 sts=4 sw=4 expandtab
 
 autocmd BufWritePre *.def,*.mod :call <SID>StripTrailingWhitespaces()
 
