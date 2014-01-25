@@ -6,6 +6,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Use <F8> to launch tagbar
+nmap <F8> :TagbarToggle<CR>
+" Use <F7> to launch history br
+nmap <F8> :GundoToggle<CR>
+
+
 filetype plugin indent on
 set number
 set laststatus=2
