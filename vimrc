@@ -3,8 +3,14 @@ execute pathogen#infect()
 
 " Usual configs
 syntax enable
-set background=dark
-colorscheme solarized
+
+" Prefered colour scheme
+if has('gui_running')
+	set guifont=Monospace\ 8
+	colorscheme vitamins
+else
+	colorscheme desert
+endif
 
 " Use <F8> to launch tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -15,10 +21,6 @@ nmap <F7> :GundoToggle<CR>
 filetype plugin indent on
 set number
 set laststatus=2
-
-if has('gui_running')
-	set guifont=Monospace\ 8
-endif
 
 set vb
 
