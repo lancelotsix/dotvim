@@ -34,3 +34,6 @@
 [submodule "bundle/ghcmod-vim"]
 	path = bundle/ghcmod-vim
 	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "bundle/vim-syntax-shakespeare"]
+	path = bundle/vim-syntax-shakespeare
+	url = https://github.com/pbrisbin/vim-syntax-shakespeare.git
