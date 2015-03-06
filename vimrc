@@ -34,6 +34,7 @@ autocmd FileType ada setlocal ts=3 sts=3 sw=3 expandtab
 autocmd FileType modula2 setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType cpp setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType hs setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 
 autocmd BufWritePre *.def,*.mod :call <SID>StripTrailingWhitespaces()
 
