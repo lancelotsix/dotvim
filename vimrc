@@ -93,3 +93,7 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
 let g:pymode_syntax_slow_sync = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+
+if !empty(system("setxkbmap -print|grep bepo"))
+	source ~/.vim/vimrc.bepo
+endif
