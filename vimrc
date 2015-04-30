@@ -7,7 +7,8 @@ syntax enable
 " Prefered colour scheme
 if has('gui_running')
 	set guifont=Monospace\ 8
-	colorscheme vitamins
+	set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
+	colorscheme solarized
 else
 	colorscheme desert
 endif
